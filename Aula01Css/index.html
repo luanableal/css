@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <style>
+        h2{
+            text-align: center;
+        }
+        ol{
+            text-align: center;
+            list-style-position: inside;
+           
+        }
+        p{
+            color:green;
+        }
+        
+    </style>
+    <title>Aprendendo CSS</title>
+</head>
+<body>
+    <h1>Aprendendo a utilizar</h1>
+    <p style="color:darkblue">O css pode ser usado de 3 maneiras diferentes. É boas práticas priorizar o css externo que é utilizado criando-se um arquivo ".css" e fazendo um link de sua página HTML com ele. 
+    <p style="color:blue">Mas você também pode fazer o uso dele dentro da sua página abrindo a tag &lt;style&gt; em seu Head e usar a sua sintaxe padrão de identificar o elemento, abrir chaves "{" colocar o atributo e posteriormente seu valor. Depois fechar as chaves "}"</p>
+    <p style="color:lightblue">Há ainda a terceira opção que é fazer a estilização em linha, ou seja, dentro da própria tag html, já é colocado o estilo que você quer para aquele elemento. Não é a melhor opção pois acaba poluindo seu código e deixando ele meio confuso. O ideal é sempre que possível os arquivos serem separados apesar de existir a possibilidade de serem usados juntos.</p>
+    <p>Para observar melhor, caso seja de seu interesse, inspecione a página e verifique que os parágrafos foram todos coloridos de verde no css interno da tag head e depois foi adicionado um css inline em cada parágrafo acima colorindo-os de azul. O CSS inline sobrescreve o outro e então os parágrafos ficaram na nova cor determinada, exceto esse que não recebeu um novo estilo.</p>
+    <h2>Ordem de Prioridade caso haja mais de uma maneira utilizada na mesma página:</h2>
+    <ol>
+        <li>CSS inline</li>
+        <li>CSS internal</li>
+        <li>CSS external</li>
+    </ul>
+
+    
+</body>
+</html>
